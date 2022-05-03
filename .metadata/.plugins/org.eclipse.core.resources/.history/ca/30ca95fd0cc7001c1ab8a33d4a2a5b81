@@ -1,0 +1,15 @@
+package com.spring.standard.events.demo.eventlisteners.standardeventlisteners;
+
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+
+public class ContextClosedEventListener implements ApplicationListener{
+
+	@Override
+	public void onApplicationEvent(ApplicationEvent arg0) {
+		System.out.println("Application closed.");
+		
+	}
+	
+
+}

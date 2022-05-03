@@ -1,0 +1,22 @@
+package com.spring.atm.event;
+
+import org.springframework.context.ApplicationEvent;
+
+public class WithdrawEvent extends ApplicationEvent {
+	String message;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5675529506367939604L;
+
+	public WithdrawEvent(Object source, String message) {
+		super(source);
+		this.message=message;
+	}
+	
+	public String getMessage() {
+		return message;
+		
+	}
+
+}

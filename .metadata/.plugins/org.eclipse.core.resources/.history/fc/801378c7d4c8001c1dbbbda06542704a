@@ -1,0 +1,21 @@
+package com.spring.atm.beans;
+
+import com.spring.atm.bankAccount.BankAccount;
+
+public class SavingsAccount extends BankAccount {
+ 
+	public SavingsAccount(int accNum, String accHolder, double accBalance) {
+		super(accNum, accHolder, accBalance);
+		
+	}
+
+	public void SavingsAccount() {		
+	}
+	
+	public int withdrawal(double accBalance) {
+		if (accBalance ==)
+		
+		return accBalance;
+		
+	}
+}

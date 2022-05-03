@@ -1,0 +1,5 @@
+package com.spring.calculator.demo.beans;
+
+public class AdditionOperation {
+
+}

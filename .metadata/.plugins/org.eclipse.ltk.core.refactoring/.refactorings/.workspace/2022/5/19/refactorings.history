@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;ArrayList&apos;" deleteContents="true" description="Delete resource &apos;ArrayList&apos;" element1="/ArrayList" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1651423911203"/>&#x0A;<refactoring comment="Delete resource &apos;spring-jdbc-mysql-connector-app&apos;" deleteContents="true" description="Delete resource &apos;spring-jdbc-mysql-connector-app&apos;" element1="/spring-jdbc-mysql-connector-app" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1651609463075"/>
+</session>

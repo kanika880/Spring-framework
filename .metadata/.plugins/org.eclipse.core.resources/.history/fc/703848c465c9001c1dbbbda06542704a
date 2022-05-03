@@ -1,0 +1,5 @@
+package com.spring.atm.event.listener;
+
+public class WithdrawalEventListener {
+
+}

@@ -1,0 +1,21 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   <bean id="additionOperation" class="com.spring.calculator.demo.beans.AdditionOperation" scope="prototype">
+   <property name="num1" value="19"/>
+   <property name="num2" value="20"/>
+   </bean>
+   <bean id="subtractionOperation" class="com.spring.calculator.demo.beans.SubtractionOperation" scope="prototype">
+   <property name="num1" value="20"/>
+   <property name="num2" value="19"/>
+   </bean>
+   <bean id="multiplicationOperation" class="com.spring.calculator.demo.beans.MultiplicationOperation" scope="prototype">
+   <property name="num1" value="20"/>
+   <property name="num2" value="19"/>
+   </bean>
+
+</beans> 

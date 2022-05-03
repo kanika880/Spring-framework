@@ -1,0 +1,10 @@
+package com.spring.atm;
+
+public class AtmApplication {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.spring.mysql.connector.controller;
+
+public class CrudController {
+
+}

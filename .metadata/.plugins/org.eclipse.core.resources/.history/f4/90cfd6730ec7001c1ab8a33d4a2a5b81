@@ -1,0 +1,9 @@
+package com.spring.standard.events.demo.eventlisteners.standardeventlisteners;
+
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextStartedEvent;
+
+public class ContextStoppedEventListener implements ApplicationListener<ContextStoppedEvent>{
+	
+
+}

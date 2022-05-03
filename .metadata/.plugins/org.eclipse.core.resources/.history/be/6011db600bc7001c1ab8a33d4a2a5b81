@@ -1,0 +1,5 @@
+package com.spring.standard.events.demo;
+
+public class ContextRefreshedEventListener {
+
+}

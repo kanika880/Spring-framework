@@ -1,0 +1,36 @@
+package com.spring.atm.bankAccount;
+
+public abstract class BankAccount {
+	private int accNum;
+	private String accHolder;
+	private double accBalance;
+
+	public BankAccount(int accNum, String accHolder, double accBalance) {
+		super();
+		this.accNum = accNum;
+		this.accHolder = accHolder;
+		this.accBalance = accBalance;
+	}
+
+	public void showBalance() {
+		System.out.println("The account balance for account number " +accNum+ " is " +accBalance);
+	}
+	
+	public double withdraw(double amount) {
+		return amount;		
+	}
+	
+	public double deposit(double amount) {
+		return amount;		
+	}
+
+	@Override
+	public String toString() {
+		return "BankAccount [accNum=" + accNum + ", accHolder=" + accHolder + ", accBalance=" + accBalance + "]";
+	}
+	
+	
+	
+	
+
+}

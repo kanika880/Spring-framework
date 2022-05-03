@@ -1,0 +1,5 @@
+package com.spring.foobar.beans;
+
+public class Foo {
+
+}

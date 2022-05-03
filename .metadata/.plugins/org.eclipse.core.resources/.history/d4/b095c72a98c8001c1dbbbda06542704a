@@ -1,0 +1,10 @@
+package com.spring.atm.beans;
+
+public class SavingsAccount {
+	private 
+
+	public SavingsAccount() {
+		super();
+	}
+
+}

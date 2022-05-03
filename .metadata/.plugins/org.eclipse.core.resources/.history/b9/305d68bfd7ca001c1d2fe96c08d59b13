@@ -1,0 +1,83 @@
+package com.spring.jdbc.application.controllers;
+
+import java.sql.*;
+
+
+import com.spring.jdbc.application.util.DatabaseConnection;
+
+public class CrudController {
+	private final Connection connection;
+
+	public CrudController(DatabaseConnection connection) {		
+		super();
+		this.connection = connection.getConnection();
+	}
+
+	
+	public void read() {
+		//Read operation using prepared statement
+		String selectFormat = """
+				SELECT *
+				FROM
+				studentdata
+				WHERE
+                    roll_no = ?""";
+		try (PreparedStatement preparedStatement = connection.prepareStatement(selectFormat))
+		{
+			preparedStatement.setInt(1, 3);
+			ResultSet rs= preparedStatement.executeQuery();
+			
+			if (!rs.isBeforeFirst()) {
+				System.out.println("No rows found");
+			}else {
+				int columnCount= rs.getMetaData().getColumnCount();
+				System.out.println("column and types::");
+				for (int i=1; i<=columnCount; i++) {
+					System.out.println(rs.getMetaData().getColumnName(i+1) +":"
+							+rs.getMetaData().getColumnTypeName(i+1)+"\t");	
+				}
+				System.out.println("\nRecords: ");
+				while (rs.next()) {
+					for (int i=1; i<=columnCount; i++) {
+						System.out.println(rs.getObject(i) +"\t");
+					}
+					System.out.println();
+				}
+			}
+		}
+					catch (SQLException e) {
+						System.out.println("Exception in read method of crud controller " +e);
+					}
+				
+				
+			
+		} 
+				
+	
+	
+
+	public void create() {
+		//create (insert) operation using prepared statement
+		String selectFormat = """
+				INSERT INTO
+				studentdata
+				VALUES(?,?,?)""";
+			
+		try (PreparedStatement preparedStatement = connection.prepareStatement(selectFormat))
+		{
+			preparedStatement.setInt(1, 8);
+			preparedStatement.setString(2, "A");
+			preparedStatement.setString(3, "Supriya");
+			ResultSet rs= preparedStatement.executeQuery();
+			
+				System.out.println("Records inserted successfully ");
+								
+			}
+		catch (SQLException e) {
+			System.out.println("Exception in create method of crud controller "+e);
+			e.printStackTrace();
+		}
+				
+	}
+
+}

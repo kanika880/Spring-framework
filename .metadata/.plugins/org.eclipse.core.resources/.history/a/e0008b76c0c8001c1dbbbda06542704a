@@ -1,0 +1,9 @@
+package com.spring.custom.event;
+
+public class WithdrawEvent {
+
+	public WithdrawEvent() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.spring.calculator.demo;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.calculator.demo.beans.AdditionOperation;
+
+public class MenuDrivenCalculatorApplication {
+	
+	public static void main(String[] args) {
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("application-context-config.xml");
+		
+		AdditionOperation adder = context.getBean("additionOperation", AdditionOperation.class);
+		adder.showOperands();
+		System.out.println("Sum =" +adder.add());
+		context.close();
+	}
+	
+}

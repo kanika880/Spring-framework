@@ -1,0 +1,14 @@
+package com.spring.custom.event;
+
+import org.springframework.context.ApplicationEvent;
+
+public class WithdrawEvent extends ApplicationEvent {
+	public WithdrawEvent(Object source) {
+		super(source);
+		// TODO Auto-generated constructor stub
+	}
+	private double amount;
+	private double accBalance;
+	
+	
+}

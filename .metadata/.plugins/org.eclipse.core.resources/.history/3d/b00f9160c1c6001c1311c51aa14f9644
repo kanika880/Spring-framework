@@ -1,0 +1,18 @@
+package com.spring.foobar;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class FoobarApplication {
+
+	public static void main(String[] args) {
+		AbstractApplicationContext context= new ClassPathXmlApplicationContext("applicationContext.xml");
+		System.out.println("spring app runs!");
+		
+		Foo f=context.getBean("foo", "Foo.class");
+		System.out.println();
+		
+
+	}
+
+}

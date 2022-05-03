@@ -1,0 +1,5 @@
+package com.spring.jdbc.application;
+
+public class JdbcApplication {
+
+}

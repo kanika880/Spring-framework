@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.spring.foobar.beans.Foo"/>
+    <fullyQualifiedTypeName name="com.spring.foobar.beans.Bar"/>
+    <fullyQualifiedTypeName name="com.spring.calculator.demo.beans.AdditionOperation"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.spring.calculator.demo.beans.SubtractionOperation"/>
+    <fullyQualifiedTypeName name="com.spring.calculator.demo.beans.MultiplicationOperation"/>
+    <fullyQualifiedTypeName name="com.spring.custom.event.WithdrawEvent"/>
+    <fullyQualifiedTypeName name="com.spring.custom.event.publisher.WithdrawEventPublisher"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationEvent"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationEventPublisherAware"/>
+    <fullyQualifiedTypeName name="com.spring.atm.event.WithdrawEvent"/>
+    <fullyQualifiedTypeName name="com.spring.atm.bankAccount.BankAccount"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationListener"/>
+    <fullyQualifiedTypeName name="com.spring.atm.event.WithdrawalEvent"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="com.spring.atm.event.publisher.WithdrawalEventPublisher"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.spring.atm.beans.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.spring.atm.beans.SalaryAccount"/>
+</qualifiedTypeNameHistroy>

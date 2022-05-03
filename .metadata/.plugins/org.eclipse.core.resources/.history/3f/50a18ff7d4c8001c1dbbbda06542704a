@@ -1,0 +1,37 @@
+package com.spring.atm.beans;
+
+import java.text.SimpleDateFormat;
+
+import com.spring.atm.bankAccount.BankAccount;
+
+public class SavingsAccount extends BankAccount {
+ 
+	public SavingsAccount(int accNum, String accHolder, double accBalance) {
+		super(accNum, accHolder, accBalance);
+		
+	}
+
+	public void SavingsAccount() {		
+	}
+	
+	public int withdrawal(int amount) {
+		if (amount >= 3000) {
+			System.out.println("Maximum withdrawal limit reached.");
+		}else if (amount >= getAccBalance()) {
+			System.out.println("You have insufficient balance to withdraw. ");
+		}else {
+			String.format(
+					"""
+						Your account is debited by Rs. %.2f on %s. 
+						The updated balance is Rs. %.2f.
+						If not done by you, call support.""",
+						amount, 
+						new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(this.getTimestamp()),
+						getAccBalance());
+						
+		}
+		
+		return (int) getAccBalance();
+		
+	}
+}

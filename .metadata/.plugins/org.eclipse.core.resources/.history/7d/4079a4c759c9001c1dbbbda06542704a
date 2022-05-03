@@ -1,0 +1,5 @@
+package com.spring.atm.event;
+
+public class WithdrawEvent {
+
+}
